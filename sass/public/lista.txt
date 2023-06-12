@@ -1,0 +1,8 @@
+bootstrap
+css
+datatable
+fontawesome
+img
+js
+lista.txt
+sweetalert2

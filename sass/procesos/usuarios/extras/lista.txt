@@ -1,0 +1,9 @@
+actualizarPassword.php
+autorizarExpediente.php
+cambiarPassword.php
+cambioAlumno.php
+cambioDependencia.php
+cambioEstatus.php
+liberarServicio.php
+lista.txt
+resetPassword.php

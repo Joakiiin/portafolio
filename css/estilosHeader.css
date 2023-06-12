@@ -1,0 +1,16 @@
+.form-group{
+    margin-bottom: 15px;
+}
+
+div{
+    display: block;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+#link{
+    color: white;
+}

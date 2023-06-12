@@ -1,0 +1,17 @@
+alumnos.php
+contacto.php
+delete.php
+dep.php
+dependencia.php
+footer.php
+header.php
+inicio.php
+lista.txt
+programas.php
+programas_S.php
+realzarReporte.php
+registro
+reportes
+subirReporte.php
+usuarios
+usuarios.php
