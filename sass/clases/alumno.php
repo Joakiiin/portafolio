@@ -470,6 +470,7 @@ class Alumnos extends Conexion {
         $bimestre= $datos['bimestre'];
         $fechainicioB = 'fechasinicioB' . $bimestre;
         $fechaterminoB = 'fechasterminoB' . $bimestre;
+        $Calificacion= 'Calificacion' . $bimestre;
         $sql= "UPDATE fechainiciotermino SET
                                            $fechainicioB = ?,
                                            $fechaterminoB = ? 
@@ -480,7 +481,15 @@ class Alumnos extends Conexion {
                                         $datos['fechaT'],
                                         $datos['nocontrol']);
             $respuesta = $query->execute();
-            return $respuesta;
+            $sql2= "UPDATE reportes_calificacion SET 
+                                        $Calificacion = ?
+                                        WHERE NoControlCalificacion = ?";
+                    $query2 = $conexion->prepare($sql2);
+                    $query2->bind_param("ii",
+                                        $datos['sumaPreguntas'],
+                                        $datos['nocontrol']);
+            $respuesta2 = $query2->execute();
+            return $respuesta && $respuesta2;
     }
     public function agregarCompromisoAlumno($datos){
         $conexion= Conexion::conectar();
@@ -1290,6 +1299,13 @@ public function autorizarExpediente ($NoControl, $idRolFK){
     $query->bind_param('ii', $idRolFK, $NoControl);
     $respuesta= $query->execute();
     $query->close();
+    $idReporteCal = 1;
+    $sql2= "INSERT INTO reportes_calificacion (NoControlCalificacion, idReporteCal) 
+    VALUES (?,?)";
+    $query2= $conexion->prepare($sql2);
+    $query2->bind_param('ii', $NoControl, $idReporteCal);
+    $respuesta2= $query2->execute();
+    $query2->close();
     return $respuesta;
 }
 public function liberarServicio ($NoControl, $idRolFK){

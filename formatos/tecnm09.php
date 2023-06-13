@@ -121,27 +121,27 @@ $pdf->SetXY(15,97);
 $pdf->SetFont('Arial','',10); //propiedades de la letra
 $pdf->Cell(8,15,utf8_decode(' 1'),1.0,'');
 $pdf->Cell(65,15,utf8_decode(' '),1.0,'');
-if ($pregunta1 == '1') {
+if ($pregunta1 == '0') {
 $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 1 PREGUNTA 1
 } else {
 $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 1 PREGUNTA 1
 }
-if ($pregunta1 == '2') {
+if ($pregunta1 == '1') {
 $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 2 PREGUNTA 1
 } else {
 $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 2 PREGUNTA 1
 }
-if ($pregunta1 == '3') {
+if ($pregunta1 == '2') {
 $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 3 PREGUNTA 1
 } else {
 $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 3 PREGUNTA 1
 }
-if ($pregunta1 == '4') {
+if ($pregunta1 == '3') {
 $pdf->Cell(20,15,utf8_decode('X'),1.0,''); //OPCION 4 PREGUNTA 1
 } else {
 $pdf->Cell(20,15,utf8_decode(' '),1.0,''); //OPCION 4 PREGUNTA 1
 }
-if ($pregunta1 == '5') {
+if ($pregunta1 == '4') {
 $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 5 PREGUNTA 1
 } else {
 $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 5 PREGUNTA 1
@@ -152,27 +152,27 @@ $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 5 PREGUNTA 1
  $pdf->SetFont('Arial','',10); //propiedades de la letra
 $pdf->Cell(8,15,utf8_decode(' 2'),1.0,'');
 $pdf->Cell(65,15,utf8_decode(' '),1.0,'');
-if ($pregunta2 == '1') {
+if ($pregunta2 == '0') {
 $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 1 PREGUNTA 2
 } else {
 $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 1 PREGUNTA 2
 }
-if ($pregunta2 == '2') {
+if ($pregunta2 == '1') {
 $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 2 PREGUNTA 2
 } else {
 $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 2 PREGUNTA 2
 }
-if ($pregunta2 == '3') {
+if ($pregunta2 == '2') {
 $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 3 PREGUNTA 2
 } else {
 $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 3 PREGUNTA 2
 }
-if ($pregunta2 == '4') {
+if ($pregunta2 == '3') {
 $pdf->Cell(20,15,utf8_decode('X'),1.0,''); //OPCION 4 PREGUNTA 2
 } else {
 $pdf->Cell(20,15,utf8_decode(' '),1.0,''); //OPCION 4 PREGUNTA 2
 }
-if ($pregunta2 == '5') {
+if ($pregunta2 == '4') {
 $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 5 PREGUNTA 2
 } else {
 $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 5 PREGUNTA 2
@@ -183,27 +183,27 @@ $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 5 PREGUNTA 2
  $pdf->SetFont('Arial','',10); //propiedades de la letra
 $pdf->Cell(8,15,utf8_decode(' 3'),1.0,'');
 $pdf->Cell(65,15,utf8_decode(' '),1.0,'');
-if ($pregunta3 == '1') {
+if ($pregunta3 == '0') {
 $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 1 PREGUNTA 3
 } else {
 $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 1 PREGUNTA 3
 }
-if ($pregunta3 == '2') {
+if ($pregunta3 == '1') {
 $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 2 PREGUNTA 3
 } else {
 $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 2 PREGUNTA 3
 }
-if ($pregunta3 == '3') {
+if ($pregunta3 == '2') {
 $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 3 PREGUNTA 3
 } else {
 $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 3 PREGUNTA 3
 }
-if ($pregunta3 == '4') {
+if ($pregunta3 == '3') {
 $pdf->Cell(20,15,utf8_decode('X'),1.0,''); //OPCION 4 PREGUNTA 3
 } else {
 $pdf->Cell(20,15,utf8_decode(' '),1.0,''); //OPCION 4 PREGUNTA 3
 }
-if ($pregunta3 == '5') {
+if ($pregunta3 == '4') {
 $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 5 PREGUNTA 3
 } else {
 $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 5 PREGUNTA 3
@@ -214,27 +214,27 @@ $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 5 PREGUNTA 3
  $pdf->SetFont('Arial','',10); //propiedades de la letra
 $pdf->Cell(8,15,utf8_decode(' 4'),1.0,'');
 $pdf->Cell(65,15,utf8_decode(' '),1.0,'');
-if ($pregunta4 == '1') {
+if ($pregunta4 == '0') {
     $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 1 PREGUNTA 4
     } else {
     $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 1 PREGUNTA 4
     }
-    if ($pregunta4 == '2') {
+    if ($pregunta4 == '1') {
     $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 2 PREGUNTA 4
     } else {
     $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 2 PREGUNTA 4
     }
-    if ($pregunta4 == '3') {
+    if ($pregunta4 == '2') {
     $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 3 PREGUNTA 4
     } else {
     $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 3 PREGUNTA 4
     }
-    if ($pregunta4 == '4') {
+    if ($pregunta4 == '3') {
     $pdf->Cell(20,15,utf8_decode('X'),1.0,''); //OPCION 4 PREGUNTA 4
     } else {
     $pdf->Cell(20,15,utf8_decode(' '),1.0,''); //OPCION 4 PREGUNTA 4
     }
-    if ($pregunta4 == '5') {
+    if ($pregunta4 == '4') {
     $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 5 PREGUNTA 4
     } else {
     $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 5 PREGUNTA 4
@@ -245,27 +245,27 @@ if ($pregunta4 == '1') {
  $pdf->SetFont('Arial','',10); //propiedades de la letra
 $pdf->Cell(8,15,utf8_decode(' 5'),1.0,'');
 $pdf->Cell(65,15,utf8_decode(' '),1.0,'');
-if ($pregunta5 == '1') {
+if ($pregunta5 == '0') {
     $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 1 PREGUNTA 5
     } else {
     $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 1 PREGUNTA 5
     }
-    if ($pregunta5 == '2') {
+    if ($pregunta5 == '1') {
     $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 2 PREGUNTA 5
     } else {
     $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 2 PREGUNTA 5
     }
-    if ($pregunta5 == '3') {
+    if ($pregunta5 == '2') {
     $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 3 PREGUNTA 5
     } else {
     $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 3 PREGUNTA 5
     }
-    if ($pregunta5 == '4') {
+    if ($pregunta5 == '3') {
     $pdf->Cell(20,15,utf8_decode('X'),1.0,''); //OPCION 4 PREGUNTA 5
     } else {
     $pdf->Cell(20,15,utf8_decode(' '),1.0,''); //OPCION 4 PREGUNTA 5
     }
-    if ($pregunta5 == '5') {
+    if ($pregunta5 == '4') {
     $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 5 PREGUNTA 5
     } else {
     $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 5 PREGUNTA 5
@@ -276,27 +276,27 @@ if ($pregunta5 == '1') {
  $pdf->SetFont('Arial','',10); //propiedades de la letra
 $pdf->Cell(8,15,utf8_decode(' 6'),1.0,'');
 $pdf->Cell(65,15,utf8_decode(' '),1.0,'');
-if ($pregunta6 == '1') {
+if ($pregunta6 == '0') {
     $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 1 PREGUNTA 6
     } else {
     $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 1 PREGUNTA 6
     }
-    if ($pregunta6 == '2') {
+    if ($pregunta6 == '1') {
     $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 2 PREGUNTA 6
     } else {
     $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 2 PREGUNTA 6
     }
-    if ($pregunta6 == '3') {
+    if ($pregunta6 == '2') {
     $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 3 PREGUNTA 6
     } else {
     $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 3 PREGUNTA 6
     }
-    if ($pregunta6 == '4') {
+    if ($pregunta6 == '3') {
     $pdf->Cell(20,15,utf8_decode('X'),1.0,''); //OPCION 4 PREGUNTA 6
     } else {
     $pdf->Cell(20,15,utf8_decode(' '),1.0,''); //OPCION 4 PREGUNTA 6
     }
-    if ($pregunta6 == '5') {
+    if ($pregunta6 == '4') {
     $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 5 PREGUNTA 6
     } else {
     $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 5 PREGUNTA 6
@@ -307,27 +307,27 @@ if ($pregunta6 == '1') {
  $pdf->SetFont('Arial','',10); //propiedades de la letra
 $pdf->Cell(8,15,utf8_decode(' 7'),1.0,'');
 $pdf->Cell(65,15,utf8_decode(' '),1.0,'');
-if ($pregunta7 == '1') {
+if ($pregunta7 == '0') {
     $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 1 PREGUNTA 7
     } else {
     $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 1 PREGUNTA 7
     }
-    if ($pregunta7 == '2') {
+    if ($pregunta7 == '1') {
     $pdf->Cell(22,15,utf8_decode('X'),1.0,''); //OPCION 2 PREGUNTA 7
     } else {
     $pdf->Cell(22,15,utf8_decode(' '),1.0,''); //OPCION 2 PREGUNTA 7
     }
-    if ($pregunta7 == '3') {
+    if ($pregunta7 == '2') {
     $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 3 PREGUNTA 7
     } else {
     $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 3 PREGUNTA 7
     }
-    if ($pregunta7 == '4') {
+    if ($pregunta7 == '3') {
     $pdf->Cell(20,15,utf8_decode('X'),1.0,''); //OPCION 4 PREGUNTA 7
     } else {
     $pdf->Cell(20,15,utf8_decode(' '),1.0,''); //OPCION 4 PREGUNTA 7
     }
-    if ($pregunta7 == '5') {
+    if ($pregunta7 == '4') {
     $pdf->Cell(21,15,utf8_decode('X'),1.0,''); //OPCION 5 PREGUNTA 7
     } else {
     $pdf->Cell(21,15,utf8_decode(' '),1.0,''); //OPCION 5 PREGUNTA 7

@@ -114,68 +114,68 @@
       <td>Cumplí en tiempo y forma con las
           actividades encomendadas alcanzando
           los objetivos.</td>
+      <td><input id= "pregunta1" type="radio" name="pregunta1" value="0" required></td>
       <td><input id= "pregunta1" type="radio" name="pregunta1" value="1" required></td>
       <td><input id= "pregunta1" type="radio" name="pregunta1" value="2" required></td>
       <td><input id= "pregunta1" type="radio" name="pregunta1" value="3" required></td>
       <td><input id= "pregunta1" type="radio" name="pregunta1" value="4" required></td>
-      <td><input id= "pregunta1" type="radio" name="pregunta1" value="5" required></td>
     </tr>
     <tr>
       <td>Trabajé en equipo y me adapté a
           nuevas situaciones.</td>
+      <td><input id="pregunta2" type="radio" name="pregunta2" value="0" required></td>
       <td><input id="pregunta2" type="radio" name="pregunta2" value="1" required></td>
       <td><input id="pregunta2" type="radio" name="pregunta2" value="2" required></td>
       <td><input id="pregunta2" type="radio" name="pregunta2" value="3" required></td>
       <td><input id="pregunta2" type="radio" name="pregunta2" value="4" required></td>
-      <td><input id="pregunta2" type="radio" name="pregunta2" value="5" required></td>
     </tr>
     <tr>
       <td>Mostré liderazgo en las actividades
           encomendadas.</td>
+      <td><input type="radio" name="pregunta3" value="0" required></td>
       <td><input type="radio" name="pregunta3" value="1" required></td>
       <td><input type="radio" name="pregunta3" value="2" required></td>
       <td><input type="radio" name="pregunta3" value="3" required></td>
       <td><input type="radio" name="pregunta3" value="4" required></td>
-      <td><input type="radio" name="pregunta3" value="5" required></td>
     </tr>
     <tr>
       <td>Organicé mi tiempo y trabajé de
           manera proactiva.</td>
+      <td><input type="radio" name="pregunta4" value="0" required></td>
       <td><input type="radio" name="pregunta4" value="1" required></td>
       <td><input type="radio" name="pregunta4" value="2" required></td>
       <td><input type="radio" name="pregunta4" value="3" required></td>
       <td><input type="radio" name="pregunta4" value="4" required></td>
-      <td><input type="radio" name="pregunta4" value="5" required></td>
     </tr>
     <tr>
       <td>Interpreté la realidad y me sensibilicé
           aportando soluciones a la problemática
           con la actividad complementaria.</td>
+      <td><input type="radio" name="pregunta5" value="0" required></td>
       <td><input type="radio" name="pregunta5" value="1" required></td>
       <td><input type="radio" name="pregunta5" value="2" required></td>
       <td><input type="radio" name="pregunta5" value="3" required></td>
       <td><input type="radio" name="pregunta5" value="4" required></td>
-      <td><input type="radio" name="pregunta5" value="5" required></td>
     </tr>
     <tr>
       <td>Realicé sugerencias innovadoras para 
           beneficio o mejora en el programa en 
           el que participa.</td>
+      <td><input type="radio" name="pregunta6" value="0" required></td>
       <td><input type="radio" name="pregunta6" value="1" required></td>
       <td><input type="radio" name="pregunta6" value="2" required></td>
       <td><input type="radio" name="pregunta6" value="3" required></td>
       <td><input type="radio" name="pregunta6" value="4" required></td>
-      <td><input type="radio" name="pregunta6" value="5" required></td>
     </tr>
     <tr>
       <td>Tuve iniciativa para ayudar en las 
           actividades y muestré espíritu de 
           servicio.</td>
+      <td><input type="radio" name="pregunta7" value="0" required></td>
       <td><input type="radio" name="pregunta7" value="1" required></td>
       <td><input type="radio" name="pregunta7" value="2" required></td>
       <td><input type="radio" name="pregunta7" value="3" required></td>
       <td><input type="radio" name="pregunta7" value="4" required></td>
-      <td><input type="radio" name="pregunta7" value="5" required></td>
     </tr>
     </tbody>
     </table>

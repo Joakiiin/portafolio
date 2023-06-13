@@ -19,7 +19,8 @@ domd.codigoPDep, domd.estadoDep, domd.municipioDep, domd.coloniaDep, domd.calleN
 fin.fechasI, fin.fechasT,
 fin.fechasinicioB1, fin.fechasterminoB1, 
 fin.fechasinicioB2, fin.fechasterminoB2, 
-fin.fechasinicioB3, fin.fechasterminoB3
+fin.fechasinicioB3, fin.fechasterminoB3,
+rep.Nombre_Reporte, repcal.Calificacion1, repcal.Calificacion2, repcal.Calificacion3
 FROM alumno AS al 
 INNER JOIN carrera AS ca ON al.NoCarrera1 = ca.NoCarrera 
 INNER JOIN programaseleccionado AS ps ON al.NoControl = ps.NoControl1 
@@ -33,6 +34,8 @@ INNER JOIN periodo AS pe ON pa.idPeriodo1 = pe.idPeriodo
 INNER JOIN domiciliosdep AS domd ON domd.NoControlDomDep = d.idDependencia
 INNER JOIN domicilios AS dom ON dom.NoControlDom = al.NoControl
 INNER JOIN fechainiciotermino AS fin ON fin.NoControlIT = al.NoControl 
+INNER JOIN reportes_calificacion AS repcal ON repcal.NoControlCalificacion = al.NoControl
+INNER JOIN reportes AS rep ON rep.idReporte = repcal.idReporteCal
 WHERE al.idRolFK = 5 AND pe.Clave = '$periodo' AND pa.Year = '$Year' ";
 $result = mysqli_query($conn, $query);
 
@@ -50,7 +53,7 @@ $headers = array('NoControl', 'Nombre', 'ApellidoP', 'ApellidoM', 'Telefono',
 'coloniaalumno', 'calleNoalumno', 
 'codigoPDep', 'estadoDep', 'municipioDep', 'coloniaDep', 'calleNoDep', 
 'fechasI', 'fechasT', 'fechasinicioB1', 'fechasterminoB1', 'fechasinicioB2', 
-'fechasterminoB2', 'fechasinicioB3', 'fechasterminoB3');
+'fechasterminoB2', 'fechasinicioB3', 'fechasterminoB3', 'Nombre_Reporte', 'Calificacion1', 'Calificacion2', 'Calificacion3');
 fputcsv($file, $headers);
 
 // Recorrer los resultados de la consulta y escribirlos en el archivo CSV

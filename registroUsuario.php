@@ -208,12 +208,12 @@ include_once 'conexion/con_db.php';
     inputCreditos.addEventListener("input", function() {
         var creditos = parseInt(inputCreditos.value);
 
-        var porcentajeMinimo = 60;
+        var porcentajeMinimo = 70;
         var maxCreditos = 260;
         var porcentajeMaximo = (maxCreditos * porcentajeMinimo) / 100;
 
         if (isNaN(creditos) || creditos < porcentajeMaximo) {
-            errorMessage.textContent = "El número de créditos debe ser mayor o igual al 60% de los 260 créditos máximos.";
+            errorMessage.textContent = "El número de créditos debe ser mayor o igual al 70% de los 260 créditos máximos.";
         } else {
             errorMessage.textContent = "";
         }
