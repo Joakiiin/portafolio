@@ -14,13 +14,13 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.office365.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'joakiiin-14@live.com.mx';
-    $mail->Password = '5526653535telcel';
+    $mail->Username = 'CORREO';
+    $mail->Password = 'CONTRASEÑA';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
     // Configurar el mensaje
-    $mail->setFrom('joakiiin-14@live.com.mx', 'Joaquin');
+    $mail->setFrom('CORREO', 'REMITENTE');
     $mail->addAddress($correo);
     $mail->Subject = 'Evaluaciones Aprobadas';
     $mail->Body = 'Tus evaluaciones del bimestre '.$bimestre.' fueron correctas.';
