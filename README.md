@@ -50,6 +50,13 @@ Plataforma de Servicio Social Escolar
 - El diagrama de la parte superior no muestra la manera en que la organización gestionara su proceso, esto puede verse sujeto a adaptaciones segun la necesidad de la organización pero para este caso el sistema funcionara acorde a estas requisiciones;
 
 ## Proceso de registro
-- Para este primer paso deberas pulsar el boton registrate aqui en la plataforma, esto a su vez te llevara a un nuevo formulario el cual deberas llenar lo que te este te solicita.
+- Para este primer paso deberas pulsar el boton registrate aqui en la plataforma, esto a su vez te llevara a un nuevo formulario el cual deberas llenar lo que te este te solicita;
 
 ![Ejemplo de imagen](index.PNG)
+
+- Los campos deben ser llenados totalmente ya que de lo contrario no podras continuar, igualmente deberas cargar tu archivo de Kardex que acredito que cumples con el 70% de los creditos solicitados;
+
+<p align="center">
+  <img src="registro1.PNG" alt="Imagen 1" width="400"/>
+  <img src="registro2.PNG" alt="Imagen 2" width="400"/>
+</p>
