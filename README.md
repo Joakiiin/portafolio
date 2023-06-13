@@ -35,3 +35,5 @@ Proyectos de desarrollo web
 - Para la configuración de archivos de correo se requiere tener una cuenta de outlook, solo debes sustituir los campos indicados con tu contraseña y tu correo, el archivo por si mismo ya extraera los correos destinatarios de la base de datos de acuerdo a los botones que elija el administrador del sistema;
 
 ![Ejemplo de imagen](correos.PNG)
+
+- Dentro de la carpeta correos se encuentran todos los archivos que requieren la configuracion antes mencionada, dentro mismo existe un archivo aun en fase de pruebas que de poder implementarse adecuadamente sera caoaz de enviar correos automaticamente segun las fechas registradas, para poner a prueba este archivo cuyo nombre es recordatorios.php debera utilizar el programador de tareas de windows para poder ejecutarlo periodicamente;
