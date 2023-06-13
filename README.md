@@ -18,3 +18,4 @@ Proyectos de desarrollo web
 - Exportar la base de datos al gestor de base de datos que esten utilizando;
 - Recomiendo enormemente crear la base de datos manualmente y abrir el archivo SQL de manera manual con un editor de codigo para crear las tablas y relaciones desde cero con el fin de que sepa que CONSTRAINT estan declarando para cada relacion, igualmente recomiendo agregren la restriccion DELETE ON CASCADE al crear la relacion ya que se puden ahorrar muchos query con ello;
 - Para mayor entendimiento de las instrucciones anteriores dejo un diagrama de la base de datos;
+![Ejemplo de imagen](MERBS.png)
