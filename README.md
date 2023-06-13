@@ -32,3 +32,5 @@ Proyectos de desarrollo web
 - Existen tablas las cuales no se estan utilizando, la razon de ello es que este proyecto se pretende escalar en cuanto la dependencia obtenga la autorizacion, de ahi que se dejaron tablas considerando futuras actualizaciones;
 
 ## Correos
+- Para la configuración de archivos de correo se requiere tener una cuenta de outlook, solo debes sustituir los campos indicados con tu contraseña y tu correo, el archivo por si mismo ya extraera los correos destinatarios de la base de datos de acuerdo a los botones que elija el administrador del sistema;
+![Ejemplo de imagen] (correos.PNG)
