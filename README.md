@@ -52,4 +52,4 @@ Plataforma de Servicio Social Escolar
 ## Proceso de registro
 - Para este primer paso deberas pulsar el boton registrate aqui en la plataforma, esto a su vez te llevara a un nuevo formulario el cual deberas llenar lo que te este te solicita.
 
-
+![Ejemplo de imagen](index.PNG)
