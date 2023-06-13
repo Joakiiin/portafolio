@@ -45,7 +45,7 @@ Plataforma de Servicio Social Escolar
 # Manual de Alumno
 ## Diagrama de proceso de servicio social
 
-![Ejemplo de imagen](DF.PNG)
+![Ejemplo de imagen](DF.png)
 
 - El diagrama de la parte superior no muestra la manera en que la organización gestionara su proceso, esto puede verse sujeto a adaptaciones segun la necesidad de la organización pero para este caso el sistema funcionara acorde a estas requisiciones.
 
