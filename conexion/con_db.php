@@ -1,6 +1,6 @@
 <?php
 function conexion(){
-	$conexion=mysqli_connect('localhost','root','Adm1n15tr4D0r11!','sassf');
+	$conexion=mysqli_connect('localhost','root','TU_CONTRASEÑA','TU_BASE_DE_DATOS');
 	return $conexion;
 }
 ?>
