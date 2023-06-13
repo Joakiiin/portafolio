@@ -1,3 +1,3 @@
 <?php
-$conexion = mysqli_connect("localhost", "root", "Adm1n15tr4D0r11!", "sassf");
+$conexion = mysqli_connect("localhost", "root", "TU_CONTRASEÑAS", "TU_BASE_DE_DATOS");
 ?>
