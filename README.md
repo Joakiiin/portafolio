@@ -1,5 +1,5 @@
-# portafolio
-Proyectos de desarrollo web
+# Portafolio
+Plataforma de Servicio Social Escolar
 # Caracteristicas
 
 - Plataforma para gestion de reportes de Servicio Social;
@@ -37,3 +37,11 @@ Proyectos de desarrollo web
 ![Ejemplo de imagen](correos.PNG)
 
 - Dentro de la carpeta correos se encuentran todos los archivos que requieren la configuracion antes mencionada, dentro mismo existe un archivo aun en fase de pruebas que de poder implementarse adecuadamente sera caoaz de enviar correos automaticamente segun las fechas registradas, para poner a prueba este archivo cuyo nombre es recordatorios.php debera utilizar el programador de tareas de windows para poder ejecutarlo periodicamente;
+
+## Direcciones
+- Los alumnos al momento de llenar su solicitud luego de haberse registrado, ser autorizados y haber seleccionado un programa deberan llenar su direccion, dicha direccion puede ser llenada en automatico con el codigo postal, para esto deberan descargar una api de la cual dejare el link de otro repositorio de mi cuenta para poder acceder a ella, recomiendo cambien el nombre de la carpeta a MEXICO para que no tengan problemas al utilizarla;
+- https://github.com/Joakiiin/ESTADO_MEXICO ;
+
+# Manual de Alumno
+
+
