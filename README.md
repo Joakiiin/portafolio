@@ -47,5 +47,9 @@ Plataforma de Servicio Social Escolar
 
 ![Ejemplo de imagen](DF.png)
 
-- El diagrama de la parte superior no muestra la manera en que la organización gestionara su proceso, esto puede verse sujeto a adaptaciones segun la necesidad de la organización pero para este caso el sistema funcionara acorde a estas requisiciones.
+- El diagrama de la parte superior no muestra la manera en que la organización gestionara su proceso, esto puede verse sujeto a adaptaciones segun la necesidad de la organización pero para este caso el sistema funcionara acorde a estas requisiciones;
+
+## Proceso de registro
+- Para este primer paso deberas pulsar el boton registrate aqui en la plataforma, esto a su vez te llevara a un nuevo formulario el cual deberas llenar lo que te este te solicita.
+
 
