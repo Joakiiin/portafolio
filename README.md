@@ -57,6 +57,6 @@ Plataforma de Servicio Social Escolar
 - Los campos deben ser llenados totalmente ya que de lo contrario no podras continuar, igualmente deberas cargar tu archivo de Kardex que acredito que cumples con el 70% de los creditos solicitados;
 
 <p align="center">
-  <img src="registro1.PNG" alt="Imagen 1" width="400"/>
-  <img src="registro2.PNG" alt="Imagen 2" width="400"/>
+  <img src="registro1.PNG" alt="Imagen 1" width="300"/>
+  <img src="registro2.PNG" alt="Imagen 2" width="300"/>
 </p>
