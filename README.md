@@ -14,7 +14,7 @@ Proyectos de desarrollo web
 ### Instalacion e implementacion
 
 - Con el codigo descargado deberas extraer la carpeta en el directorio de su servidor sea WAMP, XAMPP o caso mio el root de IIS;
-- Deberas modificar los archivos de conexion a la base de datos con el fin de poder acceder a ella de acuerdo a su entorno de base de datos, modificar especificamente la contraseña por la de ustedes;
+- Deberas modificar los archivos de conexion a la base de datos con el fin de poder acceder a ella de acuerdo a su entorno de base de datos, modificar especificamente la contraseña por la de ustedes, toma en cuenta que existe mas de un archivo de conexion en el proyecto;
 ![Ejemplo de imagen](conexionphp.PNG)
 - Exportar la base de datos al gestor de base de datos que esten utilizando;
 - Recomiendo enormemente crear la base de datos manualmente y abrir el archivo SQL de manera manual con un editor de codigo para crear las tablas y relaciones desde cero con el fin de que sepa que CONSTRAINT estan declarando para cada relacion, igualmente recomiendo agregren la restriccion DELETE ON CASCADE al crear la relacion ya que se puden ahorrar muchos query con ello;
