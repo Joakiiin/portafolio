@@ -1,6 +1,6 @@
 <?php
   // Conectar a la base de datos
-  $conn = mysqli_connect('localhost', 'root', 'Adm1n15tr4D0r11!', 'sass');
+  $conn = mysqli_connect('localhost', 'root', 'CONTRASEÑA', 'BASE_DE_DATOS');
   
   // Consultar todos los usuarios en la base de datos
   $query = 'SELECT usuario FROM tab_usuario';
