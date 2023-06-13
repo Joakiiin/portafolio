@@ -1,10 +1,5 @@
 # portafolio
 Proyectos de desarrollo web
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
 ### Caracteristicas
 
 - Plataforma para gestion de reportes de Servicio Social;
