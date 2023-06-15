@@ -31,7 +31,7 @@
             <div class="container">
   <div class="row d-flex align-items-stretch">
     <?php
-    $conexion = mysqli_connect("localhost", "root", "Adm1n15tr4D0r11!", "sassf");
+    $conexion = mysqli_connect("localhost", "root", "TU_CONTRASEÑA", "TU_BASE_DE_dATOS");
     $resultado = mysqli_query($conexion, "SELECT * FROM fechainiciotermino WHERE NoControlIT = $NoControl");
 if (mysqli_num_rows($resultado) > 0) {
   echo "Ya has llenado el formulario.";
