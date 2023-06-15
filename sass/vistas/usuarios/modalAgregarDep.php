@@ -57,6 +57,14 @@
                       <label for="puesto">Puesto</label>
                       <input type="text" class="form-control" id="puesto" name="puesto" required>
                     </div>
+                    <div class="col-sm-4">
+                      <label for="correodep">Correo</label>
+                      <input type="text" class="form-control" id="correodep" name="correodep" required>
+                    </div>
+                    <div class="col-sm-4">
+                      <label for="contactodep">Contacto</label>
+                      <input type="text" class="form-control" id="contactodep" name="contactodep" required>
+                    </div>
                     <div class="col-sm-8">
                     <label for="file" class="col-sm-2 control-label">Archivo</label>
 						<input type="file" class="form-control" id="file" name="file">

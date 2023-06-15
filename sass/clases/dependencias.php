@@ -21,15 +21,17 @@ class Dependencias extends Conexion {
     }
     public function agregarNuevoDep($datos){
         $conexion= Conexion::conectar();
-        $sql= "INSERT INTO dependencia (idDependencia, passw, NombreDep, TitularDep, puesto) 
-        VALUES (?,?,?,?,?)";
+        $sql= "INSERT INTO dependencia (idDependencia, passw, NombreDep, TitularDep, puesto, correodep, contacto) 
+        VALUES (?,?,?,?,?,?,?)";
                     $query = $conexion->prepare($sql);
-                    $query->bind_param("issss",
+                    $query->bind_param("issssss",
                                         $datos['idDep'],
                                         $datos['passw'],
                                         $datos['nombreD'], 
                                         $datos['titularD'],
-                                        $datos['puesto']);
+                                        $datos['puesto'],
+                                        $datos['correodep'],
+                                        $datos['contactodep']);
             $respuesta = $query->execute();
             $sql2= "INSERT INTO domiciliosdep (codigoPDep, estadoDep, ciudadDep, 
             municipioDep,coloniaDep, calleNoDep, NoControlDomDep) 
@@ -79,7 +81,7 @@ class Dependencias extends Conexion {
                 echo "Archivo no permitido o excede el tamaño";
             }
         }
-            return $respuesta && $respuesta2;
+            return 1;
     }
 
     public function obtenerDatosDependencia($idDependencia){

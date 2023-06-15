@@ -2,7 +2,7 @@
 include "../../sass/clases/Conexion.php";
 $con= new Conexion();
 $conexion= $con->conectar();
-$sql= "SELECT p.idPrograma, p.NombreP, p.Objetivo, d.NombreDep, t.Actividad, m.Modalidad 
+$sql= "SELECT p.idPrograma, p.NombreP, p.Objetivo, d.NombreDep, d.correodep, t.Actividad, m.Modalidad 
 FROM programa AS p INNER JOIN dependencia AS d ON p.idDependencia1 = d.idDependencia
 INNER JOIN tipoactividad AS t ON p.idTipoAct1 = t.idTipoAct
 INNER JOIN modalidad AS m ON p.idModalidad1= m.idModalidad";
@@ -18,6 +18,7 @@ $respuesta= mysqli_query($conexion, $sql);
         <th>Nombre Dependencia</th>
         <th>Tipo Actividad</th>
         <th>Modalidad</th>
+        <th>Correo</th>
         <th>Elegir</th>
     </thead>
     <tbody>
@@ -32,6 +33,7 @@ $respuesta= mysqli_query($conexion, $sql);
         <td><?php echo $mostrar['NombreDep']; ?></td>
         <td><?php echo $mostrar['Actividad']; ?></td>
         <td><?php echo $mostrar['Modalidad']; ?></td>
+        <td><?php echo $mostrar['correodep']; ?></td>
         <td>
             <button class="btn btn-warning btn-sm" data-bs-toggle="modal" 
             data-bs-target="#modalElegirPrograma"
