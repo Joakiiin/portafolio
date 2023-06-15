@@ -1,6 +1,6 @@
 <?php
 // Establecer la conexión a la base de datos
-$conn = mysqli_connect("localhost", "root", "Adm1n15tr4D0r11!", "sassf");
+$conn = mysqli_connect("localhost", "root", "TU_CONTRASEÑA!", "TU_BD");
 $periodo= $_GET['periodo2'];
 $Year=$_GET['year'];
 // Consulta SQL para obtener los datos
