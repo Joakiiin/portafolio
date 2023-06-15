@@ -4,8 +4,8 @@
         public function conectar() {
             $servidor = "localhost";
             $usuario = "root";
-            $password = "Adm1n15tr4D0r11!";
-            $db = "sassf";
+            $password = "TU_CONTRASEÑA";
+            $db = "TU_BASE_DE_DATOS";
             $conexion = mysqli_connect($servidor, $usuario, $password, $db);
 
             return $conexion;
