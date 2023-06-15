@@ -1,7 +1,7 @@
 <?php
     session_start();
     // Conexión a la base de datos
-$conexion = mysqli_connect("localhost", "root", "Adm1n15tr4D0r11!", "sassf");
+$conexion = mysqli_connect("localhost", "root", "TU_CONTRASEÑA!", "TU_BD");
 
 // Verificar si la conexión fue exitosa
 if (!$conexion) {
