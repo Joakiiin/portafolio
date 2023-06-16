@@ -52,6 +52,10 @@ $resultado3 = mysqli_query($conexion->conectar(), $query3);
                                 </select>
                     </div>
                     <div class="col-sm-4">
+                      <label for="lugaresU">Lugares</label>
+                      <input type="text" class="form-control" id="lugaresU" name="lugaresU" required>
+                    </div>
+                    <div class="col-sm-4">
                       <label for="depU">Dependencia</label>
                       <select class="form-control" id="depU" name="depU" >
                       <?php while ($fila = mysqli_fetch_array($resultado3)) { ?>
