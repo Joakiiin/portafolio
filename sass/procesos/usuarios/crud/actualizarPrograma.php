@@ -5,6 +5,7 @@ $datos= array(
     'Objetivo' => $_POST['objU'],
     'idTipoAct' => $_POST['tipU'],
     'idModalidad' => $_POST['modU'],
+    'Lugares' => $_POST['lugaresU'],
     'idDependencia' => $_POST['depU']
         );
         include "../../../clases/programas.php";
