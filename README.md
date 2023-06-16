@@ -42,11 +42,10 @@ Plataforma de Servicio Social Escolar
 - Los alumnos al momento de llenar su solicitud luego de haberse registrado, ser autorizados y haber seleccionado un programa deberan llenar su direccion, dicha direccion puede ser llenada en automatico con el codigo postal, para esto deberan descargar una api de la cual dejare el link de otro repositorio de mi cuenta para poder acceder a ella, recomiendo cambien el nombre de la carpeta a MEXICO para que no tengan problemas al utilizarla;
 - https://github.com/Joakiiin/ESTADO_MEXICO ;
 
-# Manual de Alumno
 ## Diagrama de proceso de servicio social
 
 ![Ejemplo de imagen](DF.png)
 
 - El diagrama de la parte superior no muestra la manera en que la organización gestionara su proceso, esto puede verse sujeto a adaptaciones segun la necesidad de la organización pero para este caso el sistema funcionara acorde a estas requisiciones;
 
-- En este repositorio se dejaran dos documentos en formato PDF los cuales corresponden al como utilizar el modulo administrador y el modulo alumno.
+- En este repositorio se dejaran dos documentos en formato PDF los cuales corresponden al como utilizar el modulo administrador y el modulo alumno, recuerda unicamente que el link del manual debe ser sustituido por tu localhost.
