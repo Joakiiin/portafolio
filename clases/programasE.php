@@ -23,25 +23,51 @@ class ProgramasE extends Conexion {
             return $datos;
     }
 
-    public function elegirPrograma($datos){
-        $conexion= Conexion::conectar();
-        $sql= "INSERT INTO programaseleccionado (idPrograma1, NoControl1) 
-        VALUES (?,?)";
-        $query = $conexion->prepare($sql);
-        $query->bind_param("ii", $datos['idPrograma1'],
-                                        $datos['NoControl1']
-                                    );
-        $respuesta = $query->execute();
-        $query->close();
-        $sql2 = "UPDATE alumno SET idRolFK = 3 WHERE NoControl = ?";
-    $query2 = $conexion->prepare($sql2);
-    $query2->bind_param("i", $datos['NoControl1']);
-    $respuesta2 = $query2->execute();
-    $query2->close();
-        return $respuesta && $respuesta2;
+    public function elegirPrograma($datos) {
+        $conexion = Conexion::conectar();
+    
+        // Obtener número de lugares disponibles para el programa
+        $idPrograma = $datos['idPrograma1'];
+        $sqlLugares = "SELECT lugares FROM programa WHERE idPrograma = ?";
+        $queryLugares = $conexion->prepare($sqlLugares);
+        $queryLugares->bind_param("i", $idPrograma);
+        $queryLugares->execute();
+        $queryLugares->bind_result($lugaresDisponibles);
+        $queryLugares->fetch();
+        $queryLugares->close();
+    
+        // Contar el número de alumnos seleccionados para el programa
+        $sqlContar = "SELECT COUNT(*) FROM programaseleccionado WHERE idPrograma1 = ?";
+        $queryContar = $conexion->prepare($sqlContar);
+        $queryContar->bind_param("i", $idPrograma);
+        $queryContar->execute();
+        $queryContar->bind_result($alumnosSeleccionados);
+        $queryContar->fetch();
+        $queryContar->close();
+    
+        // Verificar disponibilidad de lugares y realizar la inserción en la tabla programaseleccionado
+        if ($alumnosSeleccionados < $lugaresDisponibles) {
+            $sqlInsertar = "INSERT INTO programaseleccionado (idPrograma1, NoControl1) VALUES (?,?)";
+            $queryInsertar = $conexion->prepare($sqlInsertar);
+            $queryInsertar->bind_param("ii", $datos['idPrograma1'], $datos['NoControl1']);
+            $respuestaInsertar = $queryInsertar->execute();
+            $queryInsertar->close();
+    
+            // Actualizar el rol del alumno
+            $sqlActualizarRol = "UPDATE alumno SET idRolFK = 3 WHERE NoControl = ?";
+            $queryActualizarRol = $conexion->prepare($sqlActualizarRol);
+            $queryActualizarRol->bind_param("i", $datos['NoControl1']);
+            $respuestaActualizarRol = $queryActualizarRol->execute();
+            $queryActualizarRol->close();
+    
+            // Retornar la respuesta combinada
+            return $respuestaInsertar && $respuestaActualizarRol;
+        } else {
+            // Retornar falso si no hay lugares disponibles
+            return false;
+        }
     }
-
-}
+}    
 
 
 ?>
