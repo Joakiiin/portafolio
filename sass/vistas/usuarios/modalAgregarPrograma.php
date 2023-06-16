@@ -48,7 +48,12 @@ $resultado3 = mysqli_query($conexion->conectar(), $query3);
                       <option value="<?php echo $fila['idModalidad']; ?>"><?php echo $fila['Modalidad']; ?></option>
     
                       <?php } ?>
-                                </select>                    </div>
+                                </select>                    
+                              </div>
+                              <div class="col-sm-4">
+                      <label for="lugares">Lugares</label>
+                      <input type="text" class="form-control" id="lugares" name="lugares" required>
+                    </div>
                     <div class="col-sm-4">
                       <label for="dep">Dependencia</label>
                       <select class="form-control" id="dep" name="dep" >
