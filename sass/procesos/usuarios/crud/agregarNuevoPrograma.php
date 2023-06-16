@@ -6,6 +6,7 @@ $datos= array(
 "Objetivo" => $_POST['obj'],
 "idTipoAct" => $_POST['tip'],
 "idModalidad" => $_POST['mod'],
+"Lugares" => $_POST['lugares'],
 "idDependencia" => $_POST['dep'],
 );
 include "../../../clases/programas.php";
