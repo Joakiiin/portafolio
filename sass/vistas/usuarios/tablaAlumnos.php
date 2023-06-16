@@ -61,7 +61,11 @@ $respuesta2= mysqli_query($conexion, $sql2);
   while ($mostrar= mysqli_fetch_array($respuesta)) {
      ?>
         <tr>
-        <td><?php echo $mostrar['NoControl']; ?></td>
+        <td <?php if ($mostrar['estatus'] == 0) echo 'style="color: red; font-weight: bold;"'; 
+        elseif ($mostrar['idRolFK'] == 3) echo 'style="color: green; font-weight: bold;"'; 
+        elseif ($mostrar['idRolFK'] == 4) echo 'style="color: #8E44AD; font-weight: bold;"'; 
+        elseif ($mostrar['idRolFK'] == 5) echo 'style="text-decoration: underline; font-weight: bold;"'; ?>>
+        <?php echo $mostrar['NoControl']; ?></td>
         <td><?php echo $mostrar['Nombre']; ?></td>
         <td><?php echo $mostrar['ApellidoP']; ?></td>
         <td><?php echo $mostrar['ApellidoM']; ?></td>
