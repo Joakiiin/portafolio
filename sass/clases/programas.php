@@ -4,17 +4,17 @@ include "Conexion.php";
 class Programas extends Conexion {
     public function agregarNuevoPrograma($datos){
         $conexion= Conexion::conectar();
-        $sql= "INSERT INTO programa (idPrograma, NombreP, Objetivo, idTipoAct1, idModalidad1, idDependencia1) 
-        VALUES (?,?,?,?,?,?)";
+        $sql= "INSERT INTO programa (idPrograma, NombreP, Objetivo, idTipoAct1, idModalidad1, idDependencia1, Lugares) 
+        VALUES (?,?,?,?,?,?,?)";
                     $query = $conexion->prepare($sql);
-                    $query->bind_param("issiii",
+                    $query->bind_param("issiiii",
                                         $datos['idPrograma'],
                                         $datos['NombreP'],
                                         $datos['Objetivo'], 
                                         $datos['idTipoAct'],
                                         $datos['idModalidad'],
-                                        $datos['idDependencia']
-                                    );
+                                        $datos['idDependencia'],
+                                        $datos['Lugares']);
             $respuesta = $query->execute();
             return $respuesta;
     }
@@ -54,14 +54,16 @@ class Programas extends Conexion {
                                  Objetivo = ?,
                                  idTipoAct1 = ?,
                                  idModalidad1 = ?,
-                                 idDependencia1 = ?
+                                 idDependencia1 = ?,
+                                 Lugares= ?
                                  WHERE idPrograma = ?";
         $query = $conexion->prepare($sql);
-        $query->bind_param("ssiiisi", $datos['NombreP'],
+        $query->bind_param("ssiiiii", $datos['NombreP'],
                                         $datos['Objetivo'],
                                         $datos['idTipoAct'],
                                         $datos['idModalidad'], 
                                         $datos['idDependencia'],
+                                        $datos['Lugares'],
                                         $datos['idPrograma']
                                     );
         $respuesta = $query->execute();
